@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Calculator</title>
+</head>
+<body>
+    <div class="maindiv">
+        <label for="people"><b>Number of people</b></label><br>
+        <input type="number" id="people" name="people" required> <br>
+        <div id ="div1">
+
+        <label for="packaging" aria-required="true"><h4>Packaging Type</label></h4><br>
+        <input type="radio" name="extras" id="Small_Cups" value="Small"><label for="Small CUps">Small Cups</label><br>
+        <input type="radio" name="extras" id="Favor_Bags" value="Favor"><label for="Favor Bags">Favor Bags</label><br>
+        <input type="radio" name="extras" id="GOPO_Chips" value="GOPO"><label for="GOPO Chips">GOPO Chips</label><br>
+        <input type="radio" name="extras" id="Medium_Bags" value="Medium"><label for="Medium Bags">Medium Bags</label><br>
+        <input type="radio" name="extras" id="Large_Bags" value="Large"><label for="Large Bags">Large Bags</label><br>
+    </div>
+    </div><br>
+    <div>
+        <label for="units" >Number of units</label><br>
+        <input type="number" name="unit" id="unit" value ="0" disabled>
+    </div>
+    <div id="hiddendiv" hidden>
+        <label for="costs" >Estimated Cost</label><br>
+        <input type="number" name="cost" id="cost" disabled >
+    </div>
+    <button type="submit" value="shop">Shop Flavors</button>
+    <script src="script.js"></script>
+</body>
+</html>
